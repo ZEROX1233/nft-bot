@@ -8,7 +8,7 @@ from telegram.ext import (
     ContextTypes
 )
 
-BOT_TOKEN = "8390566895:AAEgoyjb1f9gTNxIscH_KxI8BZ0xsDTFCPI"
+BOT_TOKEN = "8390566895:AAGv-wd9BooBv6vzfTKuySWpWQStFCU-Lik"
 ADMIN_ID = 6652220800
 UPI_ID = "Vipul9784@axl"
 USDT_ADDRESS = "0x6868089d01925faaa66c4dd4597a51dd0578d7f2"
@@ -188,4 +188,5 @@ app = ApplicationBuilder().token(BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
 app.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
+
 app.run_polling()
