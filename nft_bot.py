@@ -56,7 +56,7 @@ NFTS = [
     
 ]
 
-PER_PAGE = 25  # 5 rows × 5 buttons
+PER_PAGE = 30 # 5 rows × 5 buttons
 
 # 🔹 GRID BUILDER
 def build_grid(page):
@@ -216,4 +216,5 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
 app.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
 app.run_polling()
+
 
