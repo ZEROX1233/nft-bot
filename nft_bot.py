@@ -121,7 +121,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         await query.message.reply_photo(
             photo=nft["image"],
-            caption=f"🎁 *{nft['name']}*\n💰 Price: {nft['price']}",
+            caption=f"🎁 {nft['name']}\n🆔 NFT ID: {nft['id']}\n💰 Price: {nft['price']}",
             reply_markup=InlineKeyboardMarkup(keyboard),
             parse_mode="Markdown"
         )
@@ -216,5 +216,6 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
 app.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
 app.run_polling()
+
 
 
