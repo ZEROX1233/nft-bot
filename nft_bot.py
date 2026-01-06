@@ -8,7 +8,7 @@ from telegram.ext import (
     ContextTypes
 )
 
-BOT_TOKEN = "8390566895:AAGv-wd9BooBv6vzfTKuySWpWQStFCU-Lik"
+BOT_TOKEN = "8390566895:AAF2UKnG-8H_r6uURAEjhFQJRjtuLTAOcUc"
 ADMIN_ID = 6652220800
 UPI_ID = "Vipul9784@axl"
 USDT_ADDRESS = "0x6868089d01925faaa66c4dd4597a51dd0578d7f2"
@@ -26,10 +26,25 @@ NFTS = [
     {"id": 8, "name": "Ramen", "price": "₹730" "→" "(7.68 Usdt)", "image": "https://i.postimg.cc/sgb7T3KP/IMG_20260105_152202_443.jpg"},
     {"id": 9, "name": "Khabib's Papakha", "price": "₹6999" "→" "(73.67 Usdt)", "image": "https://i.postimg.cc/Gm4vP4Pv/IMG_20260105_152202_367.jpg"},
     {"id": 10, "name": "Restless Jar", "price": "₹799" "→" "(8.41 Usdt)", "image": "https://i.postimg.cc/MpgV9zt7/IMG_20260105_152202_202.jpg"},
-    {"id": 11, "name": "Evil Eye", "price": "₹1349" "→" "(14.2 Usdt)", "image": "https://i.postimg.cc/rmjjmK2v/IMG-20260105-164413-822.jpg"},
+    {"id": 11, "name": "Lol Pop", "price": "₹819" "→" "(8.62 Usdt)", "image": "https://i.postimg.cc/TPWWYXwy/IMG_20260105_201434_148.jpg"},
+    {"id": 12, "name": "Desk Calender", "price": "₹579" "→" "(6.09 Usdt)", "image": "https://i.postimg.cc/y69bRqMC/IMG_20260105_192904_393.jpg"},
+    {"id": 13, "name": "Desk Calender", "price": "₹649" "→" "(6.83 Usdt)", "image": "https://i.postimg.cc/WzMYcrGX/IMG_20260105_192904_256.jpg"},
+    {"id": 14, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/8kW0v8q3/IMG_20260105_192904_074.jpg"},
+    {"id": 15, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/VvjZPMq4/IMG_20260105_192903_955.jpg"},
+    {"id": 16, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/QN5y7L2s/IMG_20260105_192903_909.jpg"},
+    {"id": 17, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/VvjZPMqg/IMG_20260105_192904_640.jpg"},
+    {"id": 18, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/D0qp3sr1/IMG_20260105_192904_626.jpg"},
+    {"id": 19, "name": "Desk Calender", "price": "₹549" "→" "(5.77 Usdt)", "image": "https://i.postimg.cc/gJqGcMPx/IMG-20260105-194844-684.jpg"},
+    {"id": 20, "name": "Lol Pop", "price": "₹599" "→" "(6.30 Usdt)", "image": "https://i.postimg.cc/P5P3tPkb/IMG-20260105-200409-655.jpg"},
+    {"id": 21, "name": "Lol Pop", "price": "₹669" "→" "(7.04 Usdt)", "image": "https://i.postimg.cc/dtxMmMs2/IMG_20260105_200948_068.jpg"},
+    {"id": 22, "name": "Lol Pop", "price": "₹649" "→" "(6.83 Usdt)", "image": "https://i.postimg.cc/28KpFpk7/IMG_20260105_200947_899.jpg"},
+    {"id": 23, "name": "Lol Pop", "price": "₹789" "→" "(8.30 Usdt)", "image": "https://i.postimg.cc/qM5fXfJX/IMG_20260105_200947_772.jpg"},
+    {"id": 24, "name": "Lol Pop", "price": "₹799" "→" "(8.41 Usdt)", "image": "https://i.postimg.cc/L6bdBd95/IMG_20260105_200947_880.jpg"},
+    {"id": 25, "name": "Lol Pop", "price": "₹819" "→" "(8.62 Usdt)", "image": "https://i.postimg.cc/DzbbyKZy/IMG_20260105_201433_638.jpg"},
+
 ]
 
-PER_PAGE = 15  # 2 rows × 5 buttons
+PER_PAGE = 25  # 5 rows × 5 buttons
 
 # 🔹 GRID BUILDER
 def build_grid(page):
@@ -188,5 +203,4 @@ app = ApplicationBuilder().token(BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
 app.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
-
 app.run_polling()
