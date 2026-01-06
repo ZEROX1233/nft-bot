@@ -41,7 +41,19 @@ NFTS = [
     {"id": 23, "name": "Lol Pop", "price": "₹789" "→" "(8.30 Usdt)", "image": "https://i.postimg.cc/qM5fXfJX/IMG_20260105_200947_772.jpg"},
     {"id": 24, "name": "Lol Pop", "price": "₹799" "→" "(8.41 Usdt)", "image": "https://i.postimg.cc/L6bdBd95/IMG_20260105_200947_880.jpg"},
     {"id": 25, "name": "Lol Pop", "price": "₹819" "→" "(8.62 Usdt)", "image": "https://i.postimg.cc/DzbbyKZy/IMG_20260105_201433_638.jpg"},
-
+    {"id": 26, "name": "Candy Cane", "price": "₹759" "→" "(7.98 Usdt)", "image": "https://i.postimg.cc/HLTRvnXk/IMG_20260106_132623_951.jpg"},
+    {"id": 27, "name": "Candy Cane", "price": "₹849" "→" "(8.93 Usdt)", "image": "https://i.postimg.cc/43Xq2yVc/IMG_20260106_132624_363.jpg"},
+    {"id": 28, "name": "Candy Cane", "price": "₹949" "→" "(9.98 Usdt)", "image": "https://i.postimg.cc/R0vyphK0/IMG_20260106_132624_169.jpg"},
+    {"id": 29, "name": "Candy Cane", "price": "₹659" "→" "(6.94 Usdt)", "image": "https://i.postimg.cc/HLTRvnXW/IMG_20260106_132624_057.jpg"},
+    {"id": 30, "name": "Candy Cane", "price": "₹845" "→" "(8.90 Usdt)", "image": "https://i.postimg.cc/yN7tpxc3/IMG_20260106_132623_869.jpg"},
+    {"id": 31, "name": "Candy Cane", "price": "₹699" "→" "(7.36 Usdt)", "image": "https://i.postimg.cc/jjRm32PJ/IMG_20260106_132624_618.jpg"},
+    {"id": 32, "name": "Candy Cane", "price": "₹749" "→" "(7.88 Usdt)", "image": "https://i.postimg.cc/KYmwpjBZ/IMG_20260106_132624_553.jpg"},
+    {"id": 33, "name": "Candy Cane", "price": "₹739" "→" "(7.78 Usdt)", "image": "https://i.postimg.cc/Pqd9VJYX/IMG_20260106_132624_531.jpg"},
+    {"id": 34, "name": "Candy Cane", "price": "₹729" "→" "(7.68 Usdt)", "image": "https://i.postimg.cc/MGzN3HVH/IMG_20260106_132624_454.jpg"},
+    {"id": 35, "name": "Candy Cane", "price": "₹1359" "→" "(14.31 Usdt)", "image": "https://i.postimg.cc/W4sCYzgk/IMG_20260106_132624_419.jpg"},
+    {"id": 36, "name": "Candy Cane", "price": "₹1180" "→" "(12.43 Usdt)", "image": "https://i.postimg.cc/Xvnm1qd7/IMG_20260106_132626_667.jpg"},
+    {"id": 37, "name": "Candy Cane", "price": "₹794" "→" "(8.36 Usdt)", "image": "https://i.postimg.cc/43Xq2yVs/IMG_20260106_132626_135.jpg"},
+    
 ]
 
 PER_PAGE = 25  # 5 rows × 5 buttons
@@ -204,3 +216,4 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
 app.add_handler(MessageHandler(filters.PHOTO, handle_screenshot))
 app.run_polling()
+
